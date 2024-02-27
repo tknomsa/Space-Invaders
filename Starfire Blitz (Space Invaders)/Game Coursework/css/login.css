@@ -1,0 +1,84 @@
+/* Preventing autocomplete styles for input fields */
+.box input:-webkit-autofill,
+.box input:-webkit-autofill:hover,
+.box input:-webkit-autofill:focus,
+.box input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+    box-shadow: 0 0 0 30px transparent inset !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    transition: background-color 5000s ease-in-out 0s; /* Add a long transition time to avoid abrupt change */
+}
+
+/* Styling the login box element  */
+.box {
+	background-color: rgba(25, 25, 25, 20%);
+	color: #ffe2f9;
+	width: 340px;
+	padding: 20px;
+	margin-left: 65%;
+	margin-top: 5vh; /* Margin adjustment using viewport height */
+	text-align: center;
+	border: 2px solid #ffbae7;
+	border-radius: 20px;
+	animation: rotateColors 5s linear infinite; /* Applying color rotation animation */
+}
+
+/* Creating animation for colour rotatipn */
+@keyframes rotateColors {
+	0% {
+		border-color: #E06196;
+	}
+
+	25% {
+		border-color: #660F53;
+	}
+
+	50% {
+		border-color: #442343;
+	}
+
+	75% {
+		border-color: #01243A;
+	}
+
+	100% {
+		border-color: #ffffff;
+	}
+}
+
+/* Styling the input fields */
+.box input {
+	background: none;
+	color: #FFFFFF;
+	display: box;
+	margin: 10px auto;
+	text-align: center;
+	border: 3px solid #f877c2;
+	border-radius: 24px;
+	padding: 10px 10px;
+	width: 200px;
+	transition: 0.25s; transition: 0.25s; /* Creating a smooth transition effect */
+}
+
+/* Remove outline on input focus */
+.box input:focus {
+    outline: none;
+}
+
+/* Hover effect for entry field elements */
+.box input:hover {
+    width: 250px;
+	padding: 15px 22px;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.box a {
+    color: rgb(239, 152, 239); /* Set your desired color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the login link */
+.box a:hover {
+    color: #f8f4f8; /* Set a different color for the hover state */
+}

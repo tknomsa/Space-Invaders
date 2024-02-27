@@ -1,0 +1,40 @@
+
+/* Styling the leaderboard */
+table {
+    font-family: 'Poppins';
+    font-size: 25px;
+	margin: 15px auto;
+	border-collapse: collapse; 
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+    border: 2px solid #e281c2;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Subtle shadow for depth */
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background-color: #E06196;
+	;
+	font-size: 35px;
+	color: #070707;
+}
+
+/* Adding colour to the different columns */
+td {
+	color: #fff;
+	background-color: rgba(25, 25, 25, 20%);
+}
+
+tr:hover {
+	background-color: #f89ac3;
+	transition: background-color 0.3s; /* Add a smooth transition on hover */
+}

@@ -1,0 +1,252 @@
+/* Google Fornt impprtation */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Styling for the body */
+body {
+	background: linear-gradient(to right, #660F53, #442343, #01243A);
+	margin: 0;
+	padding: 0;
+}
+
+/* Styling for the page banner */
+.page-banner {
+	background-color: #000000;
+	height: 50px;
+}
+
+/* Styling for the header navigation bar */
+.top-navigation {
+	background: linear-gradient(to bottom, #333 10%, #FFFFFF 50%);
+	overflow: hidden;
+	height: 80px;
+	line-height: 75px;
+}
+
+/* Styling the navigation links */
+.top-navigation a {
+	float: right;
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 0 50px;
+	font-family: 'Bangers', cursive;
+	font-size: 55px;
+	text-decoration: none; /* Removing the underlines from links */
+}
+
+/* Setting hover dimensions */
+.top-navigation a:hover {
+	height: 13px;
+	border-radius: 15px;
+}
+
+/* Defining the colours for  each navigation link */
+.top-navigation a:nth-child(1):hover {
+	background-color: #E06196;
+	color: #401537;
+}
+
+.top-navigation a:nth-child(2):hover {
+	background-color: #E06196;
+	color: #401537;
+}
+
+.top-navigation a:nth-child(3):hover {
+	background-color: #E06196;
+	color: #401537;
+}
+
+/* Styling the game logo image */
+.top-navigation h1 img {
+	vertical-align: top;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	width: 260px;
+	height: 135px;
+	transform: translateX(30%);
+}
+
+/* Styling the button container */
+.button-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 48%;
+	margin-top: -25vh;
+	height: 100vh;
+}
+
+/* Styling the buttons */
+.button-container button {
+	display: block;
+	margin: 10px auto;
+	padding: 15px 30px;
+	width: 250px;
+	font-size: 18px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	border: #1C4863 4px solid;
+	font-family: 'Roboto', cursive;
+}
+
+/* Removing the underline on the link*/
+.button-container a {
+	text-decoration: none;
+	color: inherit; /* Inheritting the colour from the parent button*/
+}
+
+/* Adding hovering effect */
+.button-container button:hover {
+	background-color: #852A6E;
+	color: #FFFFFF;
+	box-shadow: #FFFFFF 0 0 10px;
+	padding: 18px 25px;
+	width: 300px;
+	transition: box-shadow 0.3s ease-in-out; /* Transition for the glow effect */
+}
+
+/* Styling the spaceship */
+.spaceship img {
+	justify-content: right;
+	width: 650px;
+	height: 400px;
+	margin-top: 50px;
+	margin-bottom: -380px;
+	animation: moveUpDown 8s ease-in-out infinite; /* Use of animation */
+}
+
+/* Creating animation to move spaceship verticaaly */
+@keyframes moveUpDown {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(300px); /* Moving the spaceship up by 300px */
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Styling the game descriprion */
+.game-description {
+	border: 3px solid #FFFFFF;
+	padding: 30px;
+	border-radius: 20px;
+	position: relative;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-left: 48%;
+	margin-top: -160px;
+	text-align: center;
+	box-shadow: 0 8px 14px rgba(248, 245, 245, 0.874);
+	overflow: hidden;
+	transition: transform 0.3s, background-color 0.3s; /* Transition for sliding effect */
+}
+
+/* Pseudo-elements for the transition of game description text */
+.game-description::before,
+.game-description::after {
+	content: "GAME DESCRIPTION";
+	background: linear-gradient(to right, #01243A, #442343, #660F53);
+	font-size: 40px;
+	color: #FFFFFF;
+	font-family: 'Bangers';
+	position: absolute;
+	top: 0%; /* Vertically centering the text */
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	text-align: center;
+	line-height: 200px;
+	opacity: 1;
+	transition: opacity 0.3s, top 0.3s;
+}
+
+/* Pseudo-element for game description text */
+.game-description::after {
+	top: 100%;
+	opacity: 0; /* Text hidden initially */
+	transition: opacity 0.3s, top 0.3s;
+}
+
+.game-description:hover::before {
+	opacity: 0; /* Hiding the*/
+	top: 100%; /* Sliding effect when hovered */
+}
+
+.game-description:hover::after {
+	opacity: 1; /* Making game description visible when hovered */
+	top: 100%; /* Sliding effect when hovered */
+}
+
+.game-description h1 {
+	font-size: 30px;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+/* Styling for game description text */
+.game-description p {
+	font-size: 18px;
+	color: #c4bdbd;
+	font-family: 'Poppins';
+}
+
+/* Styling for the page footer */
+.page-footer {
+	background-color: #242324;
+	color: #f7f6f8;
+	margin-top: 40px;
+	opacity: 0.6;
+}
+
+/* Styling the social media links */
+.social-media {
+	display: flex;
+	justify-content: center;
+
+}
+
+.social-media a {
+	text-decoration: none;
+	padding: 2px;
+	margin: 10px;
+}
+
+.social-media a i {
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+/* Styling the footer navigation */
+.footer-nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-right: 50px;
+
+}
+
+.footer-nav ul li a {
+	color: #FFFFFF;
+	margin: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	opacity: 0.7;
+}
+
+/* Styling for the footer bottom */
+.footer-bottom {
+	background-color: #171717;
+    color: #FFFFFF;
+	padding: 2px;
+	text-align: center;
+
+}
+

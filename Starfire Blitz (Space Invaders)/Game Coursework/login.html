@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+   <!-- Linking stylesheets -->
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/login.css">
+   <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Login</title>
+</head>
+<body>
+   <!-- Creating page banner -->
+   <div class="page-container">
+      <div class="page-banner">
+         <div class="banner-content">
+         </div>
+      </div>
+   </div>   
+
+      <!-- Creating navigation links -->
+      <nav class="top-navigation">
+         <a href="leaderboard.html">LEADERBOARD</a>
+         <a href="game.html">GAME</a>
+         <a href="index.html">HOME</a>
+         <!-- Game logo placement -->
+         <div class="gamelogo">
+            <h1>
+               <img src="Images\gamee logo.png">
+            </h1>
+         </div>
+      </nav>
+      <div class="spaceship">
+         <img src="Images\spaceship3.png" alt="spaceship">
+      </div>
+      <!-- Update the ID for the username and password fields in your login form -->
+      <form class="box" id="loginForm" action="login.html" method="post" onsubmit="return validateLogin()">
+         <h1>Login</h1>
+         <input type="text" id="loginUsername" name="" placeholder="Username" required>
+         <input type="password" id="loginPassword" name="" placeholder="Password" required>
+         <input type="submit" name="" value="Login">
+         <p id="feedback"></p>
+         <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </form>
+      
+      <!-- Creating footer -->
+      <footer>
+         <div class="page-footer">
+            <div class="social-media">
+               <a href=""><i class="fa-brands fa-facebook"></i></a>
+               <a href=""><i class="fa-brands fa-twitter"></i></a>
+               <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footer-nav">
+               <ul>
+                  <li><a href="aboutcreator.html">ABOUT CREATOR</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="https:gmail.com">CONTACT US</a></li>
+               </ul>
+            </div>
+            <div class="footer-bottom">
+               <!-- Placing copyright claims -->
+               <p>Copyright © 2023 Starfire Blitz. All rights reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <script src="Javascript\login.js"></script>
+   </body>
+</html>
